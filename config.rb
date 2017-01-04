@@ -1,12 +1,14 @@
 # Require any additional compass plugins here.
 add_import_path "bower_components/foundation/scss"
+add_import_path "bower_components/slick-carousel/scss"
 
 # Set this to the root of your project when deployed:
 http_path = "/"
 css_dir = "stylesheets"
 sass_dir = "scss"
-images_dir = "images"
+images_dir = "img"
 javascripts_dir = "js"
+font_dir = "fonts"
 
 # You can select your preferred output style here (can be overridden via the command line):
 # output_style = :expanded or :nested or :compact or :compressed

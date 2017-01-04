@@ -28,8 +28,46 @@
       </section>
     </nav>
 
+    <div class="kanker">
+      <div>your content1</div>
+      <div>your content2</div>
+      <div>your content3</div>
+    </div>
+
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
     <script src="js/app.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript">
+    $('.kanker').slick({
+
+      // normal options...
+      infinite: true,
+
+      // the magic
+      responsive: [{
+
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            infinite: true
+          }
+
+        }, {
+
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            dots: true
+          }
+
+        }, {
+
+          breakpoint: 300,
+          settings: "unslick" // destroys slick
+
+        }]
+    });
+    </script>
   </body>
 </html>
